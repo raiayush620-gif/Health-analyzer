@@ -10,7 +10,7 @@ import adminRoutes from './routes/adminRoutes.js';
 dotenv.config();
 
 // Connect to Database
-connectDB();
+await connectDB();
 
 const app = express();
 

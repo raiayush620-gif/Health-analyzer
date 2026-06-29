@@ -5,8 +5,13 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const USERS_FILE = path.join(__dirname, '../mock_users.json');
-const RECORDS_FILE = path.join(__dirname, '../mock_records.json');
+const USERS_FILE = process.env.VERCEL 
+  ? '/tmp/mock_users.json' 
+  : path.join(__dirname, '../mock_users.json');
+
+const RECORDS_FILE = process.env.VERCEL 
+  ? '/tmp/mock_records.json' 
+  : path.join(__dirname, '../mock_records.json');
 
 export const getMockUsers = () => {
   try {
