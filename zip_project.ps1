@@ -15,6 +15,7 @@ Copy-Item -Path "client" -Destination $stagePath -Recurse -Force -ErrorAction Si
 Copy-Item -Path "server" -Destination $stagePath -Recurse -Force -ErrorAction SilentlyContinue
 Copy-Item -Path "package.json" -Destination $stagePath -Force
 Copy-Item -Path "README.md" -Destination $stagePath -Force
+Copy-Item -Path "vercel.json" -Destination $stagePath -Force
 Copy-Item -Path "Zebra" -Destination $stagePath -Recurse -Force -ErrorAction SilentlyContinue
 
 # Clean staging directory by deleting node_modules and builds
