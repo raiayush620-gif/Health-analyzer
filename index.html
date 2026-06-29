@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Why Are You Tired?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+
+<header id="navbar">
+  <nav class="nav-pill">
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('analysis')">Analysis</button>
+    <button onclick="showPage('dashboard')">Dashboard</button>
+    <button onclick="showPage('history')">History</button>
+  </nav>
+</header>
+
+<main>
+
+<section id="home" class="page active">
+  <h1>WHY ARE YOU TIRED </h1>
+</section>
+
+<section id="analysis" class="page">
+  <h2>Daily Energy Analysis</h2>
+
+  <div class="card">
+    <label>Sleep Hours
+      <input type="number" id="sleep" value="7">
+    </label>
+
+    <label>Screen Time (hrs)
+      <input type="number" id="screen" value="6">
+    </label>
+
+    <label>Water Intake (glasses)
+      <input type="number" id="water" value="5">
+    </label>
+
+    <label>Stress Level (1–10)
+      <input type="number" id="stress" value="5">
+    </label>
+
+    <button onclick="calculateEnergy()">Calculate My Energy</button>
+    <button class="ghost" onclick="showPage('home')">⬅ Back to Home</button>
+  </div>
+</section>
+
+<section id="dashboard" class="page">
+  <h2>Your Energy Dashboard</h2>
+
+  <div class="dashboard">
+    <div class="energy-box">
+      <span id="energyScore">0</span>
+      <p>Energy Score</p>
+    </div>
+
+    <canvas id="energyChart"></canvas>
+
+    <div class="card">
+      <h3>AI Insight</h3>
+      <p id="aiInsight"></p>
+      <button class="ghost" onclick="showPage('home')">⬅ Back to Home</button>
+    </div>
+  </div>
+</section>
+
+<section id="history" class="page">
+  <h2>Energy History</h2>
+  <ul id="historyList"></ul>
+
+  <button onclick="exportPDF()">📄 Export as PDF</button>
+  <button class="ghost" onclick="showPage('home')">⬅ Back to Home</button>
+</section>
+
+</main>
+
+<footer>
+  Developed by <strong>Ayush Rai</strong>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

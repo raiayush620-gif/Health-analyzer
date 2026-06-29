@@ -1,0 +1,33 @@
+# Tasks - Full-Stack MERN Migration
+
+- [x] Create folder structure and initialize repositories
+  - [x] Initialize `server/` with npm and dependencies
+  - [x] Initialize `client/` with Vite and dependencies
+- [x] Implement Node.js + Express Backend
+  - [x] Database connection configuration
+  - [x] Define Mongoose Models (`User`, `EnergyRecord`)
+  - [x] Auth controllers & middleware (JWT, bcrypt, role check)
+  - [x] CRUD controllers & routes for energy records
+  - [x] Smart personalized recommendations engine (Gemini API & heuristics)
+  - [x] Admin statistics & user management routes
+- [x] Implement React Frontend (Vite)
+  - [x] Port styling and design tokens to `index.css`
+  - [x] Set up AuthContext for authentication state
+  - [x] Create reusable components (Navigation, ProtectedRoute, UI cards)
+  - [x] Implement Home & Auth pages (Login/Register toggle)
+  - [x] Implement Analysis page (Submit energy metrics form with loading states)
+  - [x] Implement Dashboard page (Large animated score tracker, Chart.js graphs, AI advice)
+  - [x] Implement History page (Search logs, filter options, custom tabular view, pdf exporter)
+  - [x] Implement Profile page (View personal averages, update credentials)
+  - [x] Implement Admin Dashboard page (Users list, user deletions, role toggles, global stats)
+- [x] Connect Frontend & Backend
+  - [x] Configure API clients (axios or fetch calls)
+  - [x] Set up root-level `package.json` for concurrently starting client and server
+  - [x] Test end-to-end user flows locally
+- [x] Project Packaging and Deployment Guide
+  - [x] Create `README.md` with complete installation and deployment steps
+  - [x] Write `zip_project.ps1` PowerShell script to bundle code for the user
+  - [x] Generate the ZIP file containing all source files, configurations, and docs
+- [x] Final Walkthrough & Verification
+  - [x] Verify everything works (user registration, login, dashboard charts, history PDF, admin controls)
+  - [x] Create `walkthrough.md` report

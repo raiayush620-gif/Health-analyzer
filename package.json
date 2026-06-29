@@ -1,0 +1,15 @@
+{
+  "name": "energy-analyzer-fullstack",
+  "version": "1.0.0",
+  "description": "Full-stack MERN Energy Analyzer",
+  "scripts": {
+    "install-all": "npm install && npm install --prefix client && npm install --prefix server",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
