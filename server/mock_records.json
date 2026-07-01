@@ -142,5 +142,29 @@
     "date": "2026-06-29T00:00:00.000Z",
     "createdAt": "2026-06-29T18:10:32.078Z",
     "updatedAt": "2026-06-29T18:10:32.078Z"
+  },
+  {
+    "_id": "mock_record_1782788101699",
+    "user": "mock_user_1782741007667",
+    "sleep": 7,
+    "screenTime": 6,
+    "waterIntake": 5,
+    "stressLevel": 5,
+    "energyScore": 77,
+    "date": "2026-06-30T00:00:00.000Z",
+    "createdAt": "2026-06-30T02:55:01.727Z",
+    "updatedAt": "2026-06-30T02:55:01.727Z"
+  },
+  {
+    "_id": "mock_record_1782789289940",
+    "user": "mock_user_1782741007667",
+    "sleep": 7,
+    "screenTime": 6,
+    "waterIntake": 5,
+    "stressLevel": 5,
+    "energyScore": 77,
+    "date": "2026-06-30T00:00:00.000Z",
+    "createdAt": "2026-06-30T03:14:49.940Z",
+    "updatedAt": "2026-06-30T03:14:49.940Z"
   }
 ]
