@@ -16,5 +16,32 @@
     "role": "user",
     "createdAt": "2026-06-29T14:17:31.259Z",
     "updatedAt": "2026-06-29T14:17:31.259Z"
+  },
+  {
+    "_id": "mock_user_1782921339343",
+    "username": "testuser",
+    "email": "test@example.com",
+    "password": "$2a$10$FKwnY5S8oIVg9bf68A43ReHgdOY.aiwK6jrgOp0x3p9QIuMnToXLu",
+    "role": "user",
+    "createdAt": "2026-07-01T15:55:39.343Z",
+    "updatedAt": "2026-07-01T15:55:39.343Z"
+  },
+  {
+    "_id": "mock_user_1782921560029",
+    "username": "akash",
+    "email": "verma@gmail.com",
+    "password": "$2a$10$cWIdMcUAwx/7ouuzz1CBs.NG1995py79ZUyREtMqw6mBmo33DLjS2",
+    "role": "user",
+    "createdAt": "2026-07-01T15:59:20.030Z",
+    "updatedAt": "2026-07-01T15:59:20.030Z"
+  },
+  {
+    "_id": "mock_user_1782922732936",
+    "username": "ajit",
+    "email": "ajit@gmail.com",
+    "password": "$2a$10$eNixumWKcCo0.vTi8uWD7ezMv0SIJ698Na43pjovkCB.00naLFzSC",
+    "role": "user",
+    "createdAt": "2026-07-01T16:18:52.936Z",
+    "updatedAt": "2026-07-01T16:18:52.936Z"
   }
 ]
